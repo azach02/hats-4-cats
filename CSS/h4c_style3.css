@@ -1,0 +1,58 @@
+div#begin {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+div#begin>div.convo {
+    position: relative;
+}
+
+div#begin>div.convo img#kevin {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+
+div#begin>div.convo img#hi {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity .55s ease-in-out;
+}
+
+div#begin>div.convo img#help {
+    position: relative;
+    width: 200px;
+    bottom: 100px;
+    right: 0px;
+    opacity: 0;
+    transition: opacity .55s ease-in;
+    transform: opacity .001s ease-out; 
+}
+
+div#begin>div.convo img#kevin:hover+img#hi {
+    display: block;
+    opacity: 1.0;
+}
+
+div#begin>div.convo img#kevin:hover+img#hi+img#help {
+    transition-delay: 0.5s;
+    opacity: 0.2;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    div#begin>div.convo>img#kevin:hover+img#hi {
+        display: none;
+        opacity: 0;
+    }
+
+    
+    div#begin>div.convo>img#help {
+        display: none;
+        opacity: 0;
+    }
+
+}

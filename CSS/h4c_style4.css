@@ -1,0 +1,142 @@
+main {
+    overflow: auto;
+    position: relative;
+    height: 50em;
+    width: 100%;
+ }
+
+ div.infobox {
+   position: absolute;  
+}
+
+body>main>div>p {
+    text-align: center;
+    background: radial-gradient(rgb(224, 134, 31), rgb(145, 20, 20) , rgb(224, 134, 31));
+    border: 10px double rgb(145, 20, 20);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+body>main>div>img {
+    
+    height: 200px;
+    border-radius: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* First cathatgraphic */
+
+div#cathat1 {
+   display: block;
+   top: 20px;
+   left: 5%;
+}
+
+/* Second cathatgraphic */
+
+div#cathat2 {
+   display: block;
+   top: 20px;
+   left: 35%;
+}
+
+
+/* Third cathatgraphic */
+div#cathat3 {
+   display: block;
+   top: 20px;
+   left: 75%;
+}
+
+
+/* Fourth cathatgraphic */
+
+div#cathat4 {
+   display: block;
+   top: 350px;
+   left: 4%;
+}
+
+
+/* Fifth cathatgraphic */
+div#cathat5 {
+   display: block;
+   top: 350px;
+   left: 37%;
+}
+
+
+/* Sixth cathatgraphic */
+div#cathat6 {
+   display: block;
+   top: 350px;
+   left: 75%;
+}
+
+div#cathat6>p {
+   margin-right: 20px;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 1200px) {
+
+/* First cathatgraphic */
+
+div#cathat1 {
+   display: block;
+   top: 20px;
+   left: 5%;
+}
+
+/* Second cathatgraphic */
+
+div#cathat2 {
+   display: block;
+   top: 300px;
+   left: 5%;
+}
+
+
+/* Third cathatgraphic */
+div#cathat3 {
+   display: block;
+   top: 600px;
+   left: 5%;
+}
+
+
+/* Fourth cathatgraphic */
+
+div#cathat4 {
+   display: block;
+   top: 900px;
+   left: 5%;
+}
+
+
+/* Fifth cathatgraphic */
+div#cathat5 {
+   display: block;
+   top: 1200px;
+   left: 5%;
+}
+
+
+/* Sixth cathatgraphic */
+div#cathat6 {
+   display: block;
+   top: 1500px;
+   left: 5%;
+}
+
+div#cathat6>p {
+   display: block;
+   top: 1900px;
+   left: 5;
+}
+   
+}
